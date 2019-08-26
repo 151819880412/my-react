@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
@@ -14,7 +16,12 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "no-undef": "off",
+      "no-restricted-globals": "off",
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -27,5 +34,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://m.you.163.com"
 }
